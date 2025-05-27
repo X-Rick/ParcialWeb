@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-app.use(express.static('docs')); // carga directamente las paginas q se encuentren en docs
+app.use(express.static('public')); // carga directamente las paginas q se encuentren en public
 
 app.use(express.urlencoded({ extended: true })); // Permite leer los datos del formulario
 
